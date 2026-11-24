@@ -1,16 +1,29 @@
-
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap');
 
 :root {
+  --bg-obsidian: #090706;
+  --bg-ember-dark: #160c06;
+  --accent-orange: #ea580c;
+  --accent-orange-bright: #f97316;
+  --accent-amber: #fb923c;
+  --surface-glass: rgba(20, 12, 7, 0.72);
+  --surface-glass-hover: rgba(30, 18, 10, 0.85);
+  --border-glass: rgba(255, 255, 255, 0.11);
+  --border-orange: rgba(249, 115, 22, 0.35);
+  --text-primary: #f8fafc;
+  --text-secondary: #a8a29e;
+  --text-muted: #78716c;
+
   font-family: 'DM Sans', sans-serif;
-  color: #20243a;
-  background: #f5f6fc;
+  color: var(--text-primary);
+  background-color: var(--bg-obsidian);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-optical-sizing: auto;
   font-weight: 400;
+  color-scheme: dark;
 }
 
 * {
@@ -25,9 +38,13 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  background-color: var(--bg-obsidian);
+  color: var(--text-primary);
 }
 
-button, input, textarea {
+button,
+input,
+textarea {
   font: inherit;
 }
 
@@ -36,8 +53,8 @@ button {
 }
 
 ::selection {
-  background: #dcd7ff;
-  color: #37328c;
+  background: rgba(234, 88, 12, 0.35);
+  color: #fff7ed;
 }
 
 ::-webkit-scrollbar {
@@ -45,10 +62,14 @@ button {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f0eff8;
+  background: #0d0907;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #b8b2d9;
+  background: rgba(249, 115, 22, 0.35);
   border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(249, 115, 22, 0.55);
 }
