@@ -1,15 +1,16 @@
 {
-  "name": "sm-manager-backend",
+  "name": "company-onboarding-backend",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
   },
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "cloudinary": "^2.11.0",
     "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
     "dotenv": "^16.4.7",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
